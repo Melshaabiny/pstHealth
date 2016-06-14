@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'fitness',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -56,6 +57,7 @@ ROOT_URLCONF = 'pstHealth.urls'
 TEMPLATE_DIRS = (
     'pstHealth/templates',
     'home/templates',
+    'fitness/templates',
     )
 
 # TEMPLATES = [

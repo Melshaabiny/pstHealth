@@ -1,8 +1,6 @@
 {% extends "pstHealth/index.html" %}
 {% load staticfiles %}
 {% block body %}
-<body id="page-top">
-
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -83,7 +81,7 @@
                 <div class="col-lg-6 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Fitness</h3>
+                        <h3><a href="{% url 'fitness.views.renderFit' %}">Fitness</h3>
                         <p class="text-muted">Calculate your overall fitness and BMI score</p>
                     </div>
                 </div>
@@ -117,13 +115,43 @@
                                     Category
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Client Name
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
+                    <a href="{% static "img/portfolio/fullsize/1.jpg"%} " class="portfolio-box">
+                        <img src="{% static "img/portfolio/thumbnails/1.jpg" %} " class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Client Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="{% static "img/portfolio/fullsize/1.jpg"%} " class="portfolio-box">
+                        <img src="{% static "img/portfolio/thumbnails/1.jpg" %} " class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Client Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+<!--                 <div class="col-lg-4 col-sm-6">
                     <a href="{% static "img/portfolio/fullsize/1.jpg"%} " class="portfolio-box">
                         <img src="{% static "img/portfolio/thumbnails/1.jpg" %} " class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -167,37 +195,7 @@
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{% static "img/portfolio/fullsize/1.jpg"%} " class="portfolio-box">
-                        <img src="{% static "img/portfolio/thumbnails/1.jpg" %} " class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="{% static "img/portfolio/fullsize/1.jpg"%} " class="portfolio-box">
-                        <img src="{% static "img/portfolio/thumbnails/1.jpg" %} " class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
