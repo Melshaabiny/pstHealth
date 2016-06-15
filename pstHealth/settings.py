@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'fitness',
+    'crispy_forms',
+    'authtools',
+    'easy_thumbnails',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -58,6 +61,7 @@ TEMPLATE_DIRS = (
     'pstHealth/templates',
     'home/templates',
     'fitness/templates',
+    'accounts/templates',
     )
 
 # TEMPLATES = [
@@ -122,9 +126,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.9/howto/static-files/
+# Crispy Form Theme - Bootstrap 3
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 
 # Static files (CSS, JavaScript, Images)
