@@ -41,7 +41,7 @@
                 <h1>My-Good-Health</h1>
                 <hr>
                 <p>A comprehensive way to track and take care of your health</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <a href="{% url 'accounts:signup' %}" class="btn btn-primary btn-xl page-scroll">Login Now</a>
             </div>
         </div>
     </header>
@@ -53,7 +53,7 @@
                     <h2 class="section-heading">We've got what you need!</h2>
                     <hr class="light">
                     <p class="text-faded">Start a new healthy life. Keep track of your health and nutritional intake!</p>
-                    <a href="{% url 'accounts:signup' %}" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                    <a href="{% url 'home.views.about' %}" class="page-scroll btn btn-default btn-xl sr-button">Find out More!</a>
                 </div>
             </div>
         </div>
