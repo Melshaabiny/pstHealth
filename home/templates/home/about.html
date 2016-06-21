@@ -1,0 +1,126 @@
+{% extends "pstHealth/index.html" %}
+{% load staticfiles %}
+{% block body %}
+hhhhhh
+  <nav id="mainNav" class="navbar navbar-default navbar-collapse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="{% url 'home.views.index' %}#page-top">PST Health Tracker</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="{% url 'home.views.index' %}#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'home.views.index' %}#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'home.views.index' %}#portfolio">Testimonies</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'home.views.index' %}#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+<br><br><br>
+<div id="sec1" class="text-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>Healthy Goal Setting</h2>
+        <p class="lead">My-Good-Health helps you to set your health goals and monitor your progress every day. <br><br> Staying healthy has never been easier! </p>
+       </div>
+     </div>
+   </div>
+ </div>
+  
+ 
+ <div id="sec2" class="text-page">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12 text-left">
+         <h2>Features</h2>
+            <p class="lead">
+              <font size = "5">
+<u> Your Personal Health Report Card </u> 
+<br>
+We will provide you with a new updated Health Report Card based on your most recent information on both:
+<br>
+
+<ul>
+    <li>Fitness</li>
+    <li>Nutrition</li>
+</ul>
+
+Your Fitness Report Card will provide you with a new Fitness Score based on your up-to-date information on your:
+<br>
+
+<ul>
+    <li>Weight</li>
+    <li>Body fat percentage</li>
+    <li>Calories you burned</li>
+    <br>
+</ul>
+
+Your Nutrition Report Card will provide you with a new personal Nutrition Score based on your up-to-date information on your: 
+<br>
+<ul>
+    <li>Calorie consumption</li>
+    <li>Water intake</li>
+    <br>
+</ul>
+
+Make a new My-Good-Health Report Card based on your most recent information on both fitness and nutrition.
+<br>
+Your Fitness Report Card will provide you with a personal Fitness Score based on your up-to-date information on your weight, body fat percentage and the number of calories you burned.
+<br>
+Your Nutrition Report Card will provide you with a personal Nutrition Score based on your up-tp-date information on your calorie consumption and water intake.
+
+You will receive your new Overall Health Report Card every day based on the most recent information you provide on both fitness and nutrition.
+<br>
+Your Fitness Report Card will provide you with your personal Fitness Score based on your up-to-date weight, body fat percentage and the number of calories you burned.
+<br>
+Your Nutrition Report Card will provide you with your personal Nutrition Score based on your up-to-date calorie consumption and water intake information.
+    
+<br><br> 
+<u> App Encryption and Passcode </u> 
+<br>
+Feel safe in knowing that your personal health information is securely encrypted and only you can access it with your personal passcode.
+
+<br><br> 
+<u> Health Snapshot</u> - Changes Over Time 
+<br>
+Use our unique Snapshot feature to access your most important personal health information including your current list of medications and your doctor’s treatment instructions.
+
+<br><br>
+<u> Health Gaming Apps </u> 
+<br>
+You can compete with your friends in your common efforts to achieve nutrition and fitness goals.
+
+<br><br>
+<u> Wealth of Health Resource </u>
+<br>
+Stay up-to-date on important new information on how to maintain a healthy life.
+          </font>
+         </p>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ 
+{% endblock %}
