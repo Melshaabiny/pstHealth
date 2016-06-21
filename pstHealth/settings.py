@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/1.9/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.9/ref/settings/
 """
-
+from django.core.urlresolvers import reverse_lazy
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'authtools',
     'easy_thumbnails',
+    'accounts',
+    'profiles',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -62,6 +64,7 @@ TEMPLATE_DIRS = (
     'home/templates',
     'fitness/templates',
     'accounts/templates',
+    'profiles/templates',
     )
 
 # TEMPLATES = [
@@ -142,3 +145,8 @@ STATICFILES_DIRS = (
 # https://warehouse.python.org/project/whitenoise/
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+# Authentication Settings
+AUTH_USER_MODEL = 'authtools.User'
+LOGIN_REDIRECT_URL = reverse_lazy("profiles:show_self")
+LOGIN_URL = reverse_lazy("accounts:login")
